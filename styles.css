@@ -1,0 +1,555 @@
+/*-- 共通定義 --*/
+
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+  color: #888888;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input {
+  width: 400px;
+  height: 20px;
+}
+
+textarea {
+  width: 400px;
+  height: 200px;
+}
+
+.sub-title {
+  margin: 0;
+  text-decoration: underline;
+  font-size: 40px;
+  padding: 60px 0;
+}
+
+.sub-title h1 {
+  margin:40px 0;
+}
+
+.wrapper {
+
+  background-color: #dddddd;
+}
+
+
+/* -----------------------------PC
+---------------------------------*/
+/*-- header --*/
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+
+.header-title {
+  font-family: 'Rajdhani', sans-serif;
+  margin-left: 60px;
+  font-size: 30px;
+  color: #888888;
+  cursor: pointer;
+}
+
+
+.header-title :hover {
+  opacity: 0.5;
+  transition: 0.8s;
+}
+
+.header-list {
+  list-style: none;
+  width: 500px;
+  font-size: 27px;
+  margin-right: 60px;
+  padding: 0;
+}
+
+.header-lists {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header-lists a {
+  text-decoration: none;
+  color: #888888;
+  font-weight: bold;
+}
+
+.header-lists a:hover {
+  opacity: 0.5;
+  transition: 1.0s;
+}
+
+.menu-btn,
+.menu {
+  display: none;
+}
+
+/** Main **/
+.main {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-title {
+  font-size: 60px;
+  margin: 0;
+}
+
+.main-title h1 {
+  margin: 0;
+}
+
+
+/** profile **/
+
+.profile {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+
+.detailed-profile {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.detailed-profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.detail {
+  display: flex;
+}
+
+.detail-left {
+  text-align: right;
+}
+
+.detail-right {
+  text-align: left;
+}
+
+
+.detailed-profile p {
+  font-size: 25px;
+}
+
+.box{
+  margin:2em 0;
+  position: relative;
+  padding: 0.5em 1.5em;
+  border-top: solid 2px #888888;
+  border-bottom: solid 2px #888888;
+  display: flex;
+}
+
+.box:before, .box:after{
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 2px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: #888888;
+}
+
+.box:before {left: 10px;}
+.box:after {right: 10px;}
+.box p {
+  margin: 0 ; 
+  padding: 0;
+  font-size: 17.5px;
+  font-weight: normal;
+  text-align: left;
+  padding: 15px 0px;
+}
+
+
+/** skills **/
+
+.skill {
+  background-color: #dddddd;
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill-content {
+  min-width: 30vh;
+}
+
+.skill-title {
+  font-weight: lighter;
+  font-size: 50px;
+  margin: 0;
+  border-bottom: solid 3px #888888;
+}
+
+.skill-icon {
+  padding-left: 15px;
+}
+
+.skill-list {
+  font-size: 50px;
+  list-style: none;
+  padding: 0;
+  font-weight: lighter;
+  margin: 50px 0;
+}
+
+
+.study-content {
+  min-width: 30vh;  
+}
+
+
+.study-title {
+  font-weight: lighter;
+  font-size: 50px;
+  margin: 0;
+  border-bottom: solid 3px #888888;
+}
+
+
+
+.box2 {
+  padding: 3em 3em;
+  margin: 2em 0;
+  font-weight: bold;
+  border: solid 3px #888888;
+}
+
+.box2 p {
+  margin: 0; 
+  padding: 0;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: space-around;
+  font-size: 11vh;
+  margin-top: 20px;
+}
+
+
+/** Portforio **/
+.portfolio {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.portfolio-content {
+  padding: 40px 0px;
+}
+
+.portfolio-title {
+  font-size: 40px;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.portfolio-title h1 {
+  margin: 0;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/** Footer **/
+
+footer {
+  color: #888888;
+  height: 100px; 
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 15px;
+}
+
+
+.icon {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  font-size: 25px;
+  padding: 25px 0;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.icon-color {
+  color: #888888;
+}
+
+
+
+/* -----------------------------タブレット---------------------------------*/
+
+@media screen and (max-width:1024px) {
+    
+  /*-- header --*/
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  .header-title {
+    font-family: 'Rajdhani', sans-serif;
+    color: #888888;
+    margin: 0 auto;
+  }
+
+  .header-title a {
+    text-decoration: none;
+    color: #888888;
+  }
+
+  .header-list {
+    display: none;
+  }
+
+  .menu-btn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #888888;
+    color: #fff;
+  }
+
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+
+  .menu_item {
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .menu_item li {
+    padding: 20px 0;
+  }
+
+  .menu_item a {
+    text-decoration: none;
+    color: #888888;
+    font-size: 3vh;
+  }
+
+  .menu{
+    transform: translateX(100vw);
+    transition: all .3s linear;
+  }
+
+  .menu.is-active{
+    transform: translateX(0);
+  }
+
+  /** skills **/ 
+  
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-list {
+    font-size: 70px;
+  }
+}
+
+/* -----------------------------スマホ---------------------------------*/
+
+@media screen and (max-width:480px) {
+
+  .container {
+    width: 100%;
+  }
+
+
+  /*-- header --*/
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  .header-title {
+    font-family: 'Rajdhani', sans-serif;
+    color: #888888;
+    margin: 0 auto;
+    font-size: 25px;
+  }
+
+  .header-title a {
+    text-decoration: none;
+    color: #888888;
+  }
+
+  .header-list {
+    display: none;
+  }
+
+  .menu-btn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #888888;
+    color: #fff;
+  }
+
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+
+  .menu_item {
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .menu_item li {
+    padding: 20px 0;
+  }
+
+  .menu_item a {
+    text-decoration: none;
+    color: #888888;
+    font-size: 3vh;
+  }
+
+  .menu{
+    transform: translateX(100vw);
+    transition: all .3s linear;
+  }
+
+  .menu.is-active{
+    transform: translateX(0);
+  }
+
+  /** main **/ 
+  .main-title {
+    font-size: 50px;
+  }
+
+
+  /** profile **/
+  .detailed-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /** skills **/
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-list {
+    display: flex;
+    flex-flow: wrap;
+    font-size: 50px;
+  }
+
+}
+
